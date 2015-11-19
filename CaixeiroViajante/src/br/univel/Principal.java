@@ -18,7 +18,6 @@ public class Principal {
 		System.out.println("2 - Ligação e distância");
 		System.out.println("3 - Percorrer");
 		System.out.println("9 - Sair");
-		System.out.println("9 - Sair");
 		System.out.println("Digite sua opção: ");
 
 		opcao = sc.nextInt();
