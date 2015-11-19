@@ -35,7 +35,7 @@ public class Principal {
 		case 9:
 			System.exit(0);
 		default:
-			System.out.println("\nOPÇÃO INVALIDA, TENTE NOVAMENTE...\n");
+			System.out.println("Opção inválida, Tente novamente...");
 			menu();
 			break;
 		}
