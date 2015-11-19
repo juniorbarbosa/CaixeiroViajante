@@ -24,13 +24,13 @@ public class Principal {
 
 		switch (opcao) {
 		case 1:
-			System.out.println("Lista de cidades");
+			cadastrarCidades();
 			menu();
 		case 2:
-			System.out.println("Ligação e distância");
+			ligacaoDistancia();
 			menu();
 		case 3:
-			System.out.println("Percorrer");
+			trajeto();
 			menu();
 		case 9:
 			System.exit(0);
@@ -39,6 +39,18 @@ public class Principal {
 			menu();
 			break;
 		}
+	}
+
+	private static void cadastrarCidades() {
+
+	}
+
+	private static void ligacaoDistancia() {
+
+	}
+
+	private static void trajeto() {
+
 	}
 
 }
