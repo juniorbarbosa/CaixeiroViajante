@@ -1,8 +1,12 @@
 package br.univel;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Principal {
+
+	private static List<String> listaCidade = new ArrayList<String>();
 
 	public static void main(String[] args) {
 		menu();
@@ -42,9 +46,11 @@ public class Principal {
 	}
 
 	private static void cadastrarCidades() {
-		System.out.println("Quero");
-		System.out.println("Quero");
-		System.out.println("nao quero");
+		Scanner sc = new Scanner(System.in);
+
+		String entradaUsuario = sc.nextLine().trim();
+
+		listaCidade.add(entradaUsuario);
 
 	}
 
