@@ -52,6 +52,8 @@ public class Principal {
 
 		listaCidade.add(entradaUsuario);
 
+		System.out.println(listaCidade);
+		
 	}
 
 	private static void ligacaoDistancia() {
