@@ -42,6 +42,7 @@ public class Principal {
 	}
 
 	private static void cadastrarCidades() {
+		System.out.println("Quero");
 
 	}
 
