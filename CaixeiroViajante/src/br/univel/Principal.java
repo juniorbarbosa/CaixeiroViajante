@@ -1,12 +1,13 @@
 package br.univel;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Principal {
 
-	private static List<String> listaCidade = new ArrayList<String>();
+	private static HashMap<Integer, String> mapaCidade = new HashMap<>();
+	private static HashMap<Integer, Integer> mapaLigacaoCidades = new HashMap<>();
+	private static HashMap<HashMap, Integer> distanciaCidades = new HashMap<>();
 
 	public static void main(String[] args) {
 		menu();
@@ -48,15 +49,29 @@ public class Principal {
 	private static void cadastrarCidades() {
 		Scanner sc = new Scanner(System.in);
 
-		String entradaUsuario = sc.nextLine().trim();
+		int idCidade = sc.nextInt();
+		String nomeCidade = sc.nextLine().trim();
 
-		listaCidade.add(entradaUsuario);
+		mapaCidade.put(idCidade, nomeCidade);
 
-		System.out.println(listaCidade);
-		
 	}
 
 	private static void ligacaoDistancia() {
+
+		System.out.println(mapaCidade);
+
+		Scanner sc = new Scanner(System.in);
+
+		Integer idCidadeOrigem = sc.nextInt();
+		Integer idCidadeDestino = sc.nextInt();
+		Integer distanciaEntreCidades = sc.nextInt();
+
+		if (!idCidadeOrigem.equals(idCidadeDestino)) {
+			mapaLigacaoCidades.put(idCidadeOrigem, idCidadeDestino);
+			distanciaCidades.put(mapaLigacaoCidades, distanciaEntreCidades);
+		}
+
+		System.out.println(distanciaCidades);
 
 	}
 
